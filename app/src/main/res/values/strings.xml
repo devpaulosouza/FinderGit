@@ -33,8 +33,6 @@
     <string name="cd_profile_picture">Profile picture</string>
     <string name="cd_code_language">Code language</string>
     <string name="title_activity_favorites">Favorites</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="error_unknown">An error has occurred</string>
     <string name="cd_owner_picture">Owner Picture</string>
 </resources>

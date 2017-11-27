@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "891101774866",
+    "firebase_url": "https://findergit.firebaseio.com",
+    "project_id": "findergit",
+    "storage_bucket": "findergit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891101774866:android:ba74d8f9cb940dde",
+        "android_client_info": {
+          "package_name": "com.vinicius.findergit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891101774866-sshh7jkm1d0na0vd1lf2ohkivo4m3gvh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vinicius.findergit",
+            "certificate_hash": "b241db1ff4a1d3e68878984b3e767cbed483ef69"
+          }
+        },
+        {
+          "client_id": "891101774866-klt7b9f9l7a907q3pf8oh1383lpk6bmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRD-WK4eHSV7x5rIN5e1S9q9pufjsJzN8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891101774866-klt7b9f9l7a907q3pf8oh1383lpk6bmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

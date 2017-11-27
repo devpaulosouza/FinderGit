@@ -13,13 +13,11 @@ import com.vinicius.findergit.R;
 import com.vinicius.findergit.data.dao.RepositoryDao;
 import com.vinicius.findergit.data.model.RealmRepository;
 
-import co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView;
 import io.realm.RealmResults;
 
 public class HomeFragment extends Fragment implements MainActivity.RepositorySearchListener {
     RecyclerView rvSearch;
     SearchAdapter searchAdapter;
-    RecyclerView.LayoutManager mLayoutManager;
     RealmResults<RealmRepository> realmRepositories;
     RepositoryDao repositoryDao;
 

@@ -1,9 +1,5 @@
 <resources>
     <string name="app_name">FinderGit</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
@@ -13,44 +9,32 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
-    <string name="error_auth">Please, try again</string>
     <string name="error_incorrect_credentials">Incorrect credentials. Please, try again</string>
     <string name="action_sign_up">Register</string>
     <string name="action_send">send</string>
     <string name="prompt_confirm_password">Confirm password</string>
-    <string name="action_cancel">cancel</string>
+    <string name="action_cancel">Cancel</string>
     <string name="error_confirm_password">This passords doesn\'t match</string>
-    <string name="title_activity_home">HomeActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
     <string name="home">Home</string>
     <string name="history">History</string>
     <string name="account_settings">Account settings</string>
     <string name="logout">Logout</string>
     <string name="text_search">What do you need?</string>
     <string name="realmHistory">Search</string>
-    <string name="txt_coord">x = %1$f, y = %2$f, z = %3$f</string>
     <string name="action_about">About</string>
     <string name="title_activity_about">About me</string>
-    <string name="title_activity_historic">History</string>
     <string name="kawaii">Kawaii</string>
     <string name="text_kawaii">H-Humberto senpai, p-please give 50 points to Vinicius for this app</string>
-    <string name="title_activity_account">My account</string>
     <string name="cd_profile_picture">Profile picture</string>
     <string name="cd_code_language">Code language</string>
-    <string name="favorites">Favorites</string>
     <string name="title_activity_favorites">Favorites</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="error_unknown">An error has occurred</string>
     <string name="cd_owner_picture">Owner Picture</string>
 </resources>

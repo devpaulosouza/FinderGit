@@ -1,4 +1,4 @@
-package com.vinicius.findergit;
+package com.vinicius.findergit.utils;
 
 /**
  * Created by paulo on 26/11/17.

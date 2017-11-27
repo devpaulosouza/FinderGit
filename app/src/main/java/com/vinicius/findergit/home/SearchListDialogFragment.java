@@ -73,6 +73,7 @@ public class SearchListDialogFragment extends BottomSheetDialogFragment {
         super.onDetach();
     }
 
+
     interface Listener {
         void onSearchDefined(String search);
 

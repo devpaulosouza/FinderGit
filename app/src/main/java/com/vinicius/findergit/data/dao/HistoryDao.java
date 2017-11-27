@@ -2,8 +2,8 @@ package com.vinicius.findergit.data.dao;
 
 import android.support.annotation.NonNull;
 
-import com.vinicius.findergit.ConstUtils;
-import com.vinicius.findergit.Utils;
+import com.vinicius.findergit.utils.ConstUtils;
+import com.vinicius.findergit.utils.Utils;
 import com.vinicius.findergit.data.model.RealmHistory;
 
 import io.realm.Realm;

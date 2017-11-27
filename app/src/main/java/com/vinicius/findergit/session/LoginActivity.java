@@ -20,7 +20,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.vinicius.findergit.R;
-import com.vinicius.findergit.Utils;
+import com.vinicius.findergit.utils.Utils;
 import com.vinicius.findergit.home.MainActivity;
 
 import butterknife.ButterKnife;

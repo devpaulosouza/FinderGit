@@ -21,7 +21,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.vinicius.findergit.Utils;
+import com.vinicius.findergit.utils.Utils;
 import com.vinicius.findergit.about.AboutActivity;
 import com.vinicius.findergit.account.AccountFragment;
 import com.vinicius.findergit.base.BaseActivity;
@@ -34,7 +34,7 @@ import com.vinicius.findergit.data.dao.RepositoryDao;
 import com.vinicius.findergit.data.model.RealmOwner;
 import com.vinicius.findergit.data.model.RealmRepository;
 import com.vinicius.findergit.favorites.FavoriteFragment;
-import com.vinicius.findergit.ConstUtils;
+import com.vinicius.findergit.utils.ConstUtils;
 import com.vinicius.findergit.history.HistoryFragment;
 
 import java.util.ArrayList;

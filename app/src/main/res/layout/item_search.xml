@@ -7,10 +7,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="110dp"
-    android:layout_marginStart="4dp"
-    android:layout_marginEnd="4dp"
-    android:layout_marginTop="2dp"
-    android:layout_marginBottom="2dp"
     android:elevation="2dp"
     android:background="?android:attr/selectableItemBackground"
     android:gravity="center"
@@ -20,73 +16,88 @@
         android:id="@+id/iv_repository"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_centerVertical="true"
         android:contentDescription="@string/cd_profile_picture" />
 
-    <TextView
-        android:id="@+id/tv_name_repository"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="Awesome repository"
-        android:textColor="@color/dark_grey"
-        android:layout_toEndOf="@+id/iv_repository"/>
-
     <RelativeLayout
-        android:id="@+id/container_name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_name_repository"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
         android:layout_toEndOf="@+id/iv_repository">
 
-        <ImageView
-            android:id="@+id/ic_user"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_centerVertical="true"
-            android:contentDescription="@string/cd_owner_picture"
-            android:tint="@color/light_grey"
-            android:layout_marginEnd="4dp"
-            app:srcCompat="@drawable/ic_person_black_24dp"/>
-
         <TextView
-            android:id="@+id/tv_name_owner"
+            android:id="@+id/tv_name_repository"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Awesome repository"
+            android:textColor="@color/dark_grey" />
+
+        <RelativeLayout
+            android:id="@+id/container_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/ic_user"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="8dp"
-            tools:text="John Doe"/>
-    </RelativeLayout>
+            android:layout_below="@+id/tv_name_repository" >
 
-    <RelativeLayout
-        android:id="@+id/container_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/iv_repository"
-        android:layout_below="@+id/container_name">
+            <ImageView
+                android:id="@+id/ic_user"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/cd_owner_picture"
+                android:tint="@color/light_grey"
+                android:layout_marginEnd="4dp"
+                app:srcCompat="@drawable/ic_person_black_24dp"/>
 
+            <TextView
+                android:id="@+id/tv_name_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ic_user"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                tools:text="John Doe"/>
+        </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/ic_code"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="4dp"
-            app:srcCompat="@drawable/ic_code_black_24dp"
-            android:layout_centerVertical="true"
-            android:tint="@color/light_grey"
-            android:contentDescription="@string/cd_code_language" />
-
-        <TextView
-            android:id="@+id/tv_language"
+        <RelativeLayout
+            android:id="@+id/container_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/ic_code"
-            android:layout_marginTop="8dp"
-            android:layout_centerVertical="true"
-            tools:text="C++"/>
+            android:layout_below="@+id/container_name">
+
+
+            <ImageView
+                android:id="@+id/ic_code"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                app:srcCompat="@drawable/ic_code_black_24dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/light_grey"
+                android:contentDescription="@string/cd_code_language" />
+
+            <TextView
+                android:id="@+id/tv_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ic_code"
+                android:layout_marginTop="8dp"
+                android:layout_centerVertical="true"
+                tools:text="C++"/>
+
+        </RelativeLayout>
 
     </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

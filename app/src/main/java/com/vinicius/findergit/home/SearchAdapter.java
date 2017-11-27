@@ -63,7 +63,7 @@ class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchViewHolder>
                 if (avatarUrl!=null && !avatarUrl.equals("")) {
                     Picasso.with(context)
                             .load(avatarUrl)
-                            .resize(60,60)
+                            .fit()
                             .into(holder.ivRepository);
                 }
             }
@@ -105,75 +105,3 @@ class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchViewHolder>
         }
     }
 }
-
-/*
-class SearchAdapter extends RealmBasedRecyclerViewAdapter<RealmRepository, SearchAdapter.SearchViewHolder> {
-    private Context context;
-    OwnerDao ownerDao;
-    SearchAdapter(Context context, RealmResults<RealmRepository> realmResults, boolean automaticUpdate, boolean animateResults) {
-        super(context, realmResults, automaticUpdate, animateResults);
-        this.context = context;
-        ownerDao = new OwnerDao();
-    }
-
-    @Override
-    public SearchViewHolder onCreateRealmViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return new SearchViewHolder(inflater.inflate(R.layout.item_search, viewGroup, false));
-    }
-
-    @Override
-    public void onBindRealmViewHolder(@NonNull final SearchViewHolder searchViewHolder, int i) {
-        final RealmRepository repository = realmResults.get(i);
-        RealmOwner realmOwner;
-        String avatarUrl;
-
-        if (repository != null) {
-            realmOwner = ownerDao.get(repository.getOwnerName());
-            searchViewHolder.tvNameRepository.setText(repository.getName());
-            searchViewHolder.tvLanguage.setText(repository.getLanguage());
-            searchViewHolder.tvNameOwner.setText(repository.getOwnerName());
-
-            if (realmOwner != null) {
-                avatarUrl = realmOwner.getAvatarUrl();
-
-                if (!avatarUrl.equals("")) {
-                    Picasso.with(context)
-                            .load(avatarUrl)
-                            .resize(60,60)
-                            .into(searchViewHolder.ivRepository);
-                }
-            }
-
-            searchViewHolder.rlItemSearch.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    try {
-                        Uri uri = Uri.parse(repository.getUrl());
-                        context.startActivity(new Intent().setData(uri));
-                    } catch (Exception e) {
-                        Toast.makeText(context, R.string.error_unknown, Toast.LENGTH_SHORT).show();
-                        e.printStackTrace();
-                    }
-                }
-            });
-        }
-    }
-
-    class SearchViewHolder extends RealmViewHolder {
-        @BindView(R.id.rl_item_search)
-        RelativeLayout rlItemSearch;
-        @BindView(R.id.iv_repository)
-        ImageView ivRepository;
-        @BindView(R.id.tv_name_owner)
-        TextView tvNameOwner;
-        @BindView(R.id.tv_name_repository)
-        TextView tvNameRepository;
-        @BindView(R.id.tv_language)
-        TextView tvLanguage;
-        SearchViewHolder(View itemView) {
-            super(itemView);
-            ButterKnife.bind(this, itemView);
-        }
-    }
-}
-*/

@@ -54,11 +54,6 @@ public class HomeFragment extends Fragment implements MainActivity.RepositorySea
 
         rvSearch.setAdapter(searchAdapter);
 
-/*        rrvSearch = view.findViewById(R.id.rrv_search);
-        realmRepository = new RepositoryDao().getAll();
-        searchAdapter = new SearchAdapter(getContext(), realmRepository, true, false);
-        rrvSearch.setAdapter(searchAdapter);*/
-
         return view;
     }
 

@@ -10,7 +10,7 @@ import com.google.gson.annotations.SerializedName;
 public class Owner {
     @SerializedName("login")
     private String name;
-    @SerializedName("aravar_url")
+    @SerializedName("atavar_url")
     private String avatarUrl;
 
     public String getName() {
